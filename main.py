@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 
-data = pd.read_csv(r"C:\Users\Usman\Downloads\Compressed/labeled_data.csv")
+data = pd.read_csv("labeled_data.csv")
 # print(data.head())
 
 data["labels"] = data["class"].map({0: "Hate Speech", 1: "Offensive Language", 2: "No Hate and Offensive"})
